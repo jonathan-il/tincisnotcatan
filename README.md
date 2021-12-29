@@ -3,6 +3,16 @@ An online version of Settlers of Catan with the option to play with Advanced Eco
 
 Visit http://tinc.herokuapp.com/ to try out the game!
 
+## Server set up 
+On Ubuntu: 
+ * Install caddy: `sudo apt install caddy`
+ * Start and enable caddy: `sudo systemctl start caddy` and `sudo systemctl enable caddy`
+ * Find port used below to run the docker image on, and modify /etc/caddy/Caddyfile (in this git repo) with the appropriate domain name for this.  It can be as simple as 
+
+    catan.my_server.com {
+      reverse proxy localhost:4567
+    }
+
 ## Contributing
 Contributions are welcome! To run locally, build the Docker image with 
 `docker build -t catan .`
