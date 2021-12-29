@@ -14,6 +14,9 @@ On Ubuntu:
         }
 
 ## Contributing
+
+Create non-root user and add user to docker group (`sudo usermod -aG docker $USER`).
+
 Contributions are welcome! To run locally, build the Docker image with 
 `docker build -t catan .`
 
