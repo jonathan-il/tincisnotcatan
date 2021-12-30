@@ -5,7 +5,7 @@ Visit http://tinc.herokuapp.com/ to try out the game!
 
 ## Server set up 
 On Ubuntu: 
- * Install caddy: `sudo apt install caddy`
+ * Install caddy: https://caddyserver.com/docs/install#debian-ubuntu-raspbian
  * Start and enable caddy: `sudo systemctl start caddy` and `sudo systemctl enable caddy`
  * Find port used below to run the docker image on, and modify /etc/caddy/Caddyfile (in this git repo) with the appropriate domain name for this.  It can be as simple as 
 
